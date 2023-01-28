@@ -16,7 +16,7 @@ const Blogs = () => {
 
   useEffect(() => {
     const fetchBlogs = async () => {
-      const response = await fetch('/api/v1/blogs');
+      const response = await fetch('https://tc-portfolio.herokuapp.com/blogs');
       const json = await response.json();
       if (response.ok) {
         dispatch({type: 'SET_BLOGS', payload: json});

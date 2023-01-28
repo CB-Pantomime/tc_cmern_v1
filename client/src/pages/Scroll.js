@@ -11,7 +11,7 @@ export default function Scroll() {
 
     const loadImages = async () => {
         try {
-            const res = await fetch('/api/v1/blogs');
+            const res = await fetch('https://tc-portfolio.herokuapp.com/blogs');
             const data = await res.json();
             setImageIds(data);
         } catch (err) {

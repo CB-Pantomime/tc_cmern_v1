@@ -10,7 +10,7 @@ export const useSignup = () => {
     setIsLoading(true);
     setError(null);
 
-    const response = await fetch('/api/v1/user/signup', {
+    const response = await fetch('https://tc-portfolio.herokuapp.com/signup', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({ email, password })

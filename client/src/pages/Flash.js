@@ -9,7 +9,7 @@ export default function Collage() {
 
     const loadFlash = async () => {
         try {
-            const res = await fetch('/api/v1/flash');
+            const res = await fetch('https://tc-portfolio.herokuapp.com/flash');
             const data = await res.json();
             setFlashIds(data);
             console.log(data)

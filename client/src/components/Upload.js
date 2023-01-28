@@ -49,7 +49,7 @@ export default function Upload() {
 
         try {
             console.log('uploadImage(), inside TRY block')
-            await fetch('/api/v1/blogs', {
+            await fetch('https://tc-portfolio.herokuapp.com/blogs', {
                 method: 'POST',
                 body: JSON.stringify({ data: base64EncodedImage }),
                 headers: { 

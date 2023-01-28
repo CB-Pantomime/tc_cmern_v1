@@ -330,9 +330,24 @@ but implements separate flash-image-style below */
   text-align: center;
   margin: auto;
   width: 50%;
-  
   padding: 35px;
 }
+
+.music-link {
+  text-align: center;
+  color: rgb(8, 8, 8);
+  text-decoration-line: underline;
+  text-decoration-thickness: 8px;
+  text-underline-offset: 5px;
+  text-decoration-color: rgb(249, 203, 85);
+  width: 50%;
+  padding: 35px;
+}
+
+.music-p {
+  margin: 40px;
+}
+
 
 /* shop page */
 .shop-main {
@@ -368,17 +383,3 @@ but implements separate flash-image-style below */
   text-decoration-color: rgb(133, 187, 101);
 } */
 
-.music-link {
-  text-align: center;
-  color: rgb(8, 8, 8);
-  text-decoration-line: underline;
-  text-decoration-thickness: 8px;
-  text-underline-offset: 5px;
-  text-decoration-color: rgb(249, 203, 85);
-  width: 50%;
-  padding: 35px;
-}
-
-.music-p {
-  margin: 40px;
-}

@@ -8,7 +8,7 @@ const BlogDetails = ({ blog }) => {
   const { user } = useAuthContext()
 
   const handleClick = async () => {
-    const response = await fetch('/api/v1/blogs/' + blog._id, {
+    const response = await fetch('https://tc-portfolio.herokuapp.com/blogs/' + blog._id, {
       method: 'DELETE',
       headers: {
         'Authorization': `Bearer ${user.token}`

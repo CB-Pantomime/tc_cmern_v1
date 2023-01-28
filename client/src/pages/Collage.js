@@ -11,7 +11,7 @@ export default function Collage() {
         try {
             // here?
             console.log('running?')
-            const res = await fetch('/api/v1/collage');
+            const res = await fetch('https://tc-portfolio.herokuapp.com/collage');
             const data = await res.json();
             setCollageIds(data);
             console.log(data)

@@ -16,7 +16,7 @@ const BlogForm = () => {
 
     const blog = {title, words, image}
     
-    const response = await fetch('/api/v1/blogs', {
+    const response = await fetch('https://tc-portfolio.herokuapp.com/blogs', {
       method: 'POST',
       body: JSON.stringify(blog),
       headers: {
